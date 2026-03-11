@@ -1,4 +1,3 @@
-```
 # 🌌 STAR WARS ARCHIVES: NEURAL DASHBOARD
 
 ---
@@ -25,6 +24,31 @@ This is a high-performance **Star Wars Single Page Application (SPA)** designed 
 - **Tools:** `Lucide React`, `Star Jedi Fonts`, `Eslint`
 
 ---
+
+## 📂 PROJECT STRUCTURE
+
+The repository is organized using a **Feature-Based Pattern**, ensuring that logic, components, and styles are modular and easy to maintain.
+
+```text
+src/
+├── api/                # API Configuration (swapi.js)
+├── assets/             # Media & Static Files
+├── components/
+│   ├── common/         # Shared UI (DataField.jsx)
+│   ├── dashboard/      # Dashboard Specific Components
+│   ├── features/       # Feature-driven Modules
+│   │   ├── movie/      # Movie modules
+│   │   ├── people/     # Personnel data
+│   │   ├── planets/    # Celestial data
+│   │   ├── species/    # Species information
+│   │   └── starships/  # Fleet management (StarshipList, Detail)
+│   ├── layout/         # Layout Wrappers
+│   └── PeopleComparison.jsx
+├── hooks/              # Custom Hooks (useSwapi.js)
+├── pages/              # Page Components (DashboardHome, MoviesPage, etc.)
+├── store/              # Redux Slices & Store Configuration
+└── App.jsx             # Root Component & Routes
+
 ```
 
 ---
@@ -97,5 +121,3 @@ npm run dev
 <img src="https://www.google.com/search?q=https://forthebadge.com/images/badges/made-with-javascript.svg" alt="Made with JS">
 <img src="https://www.google.com/search?q=https://forthebadge.com/images/badges/visual-studio-code.svg" alt="VS Code">
 </p>
-
-```
