@@ -14,6 +14,8 @@
 
 This is a high-performance **Star Wars Single Page Application (SPA)** designed as a tactical monitoring tool. It demonstrates the implementation of modern web architecture, focused on **Scalable State Management**, high-efficiency data fetching, and a Cyberpunk HUD-inspired User Interface.
 
+**🌐 LIVE DEMO:** [https://starwars-spa.vercel.app/](https://starwars-spa.vercel.app/)
+
 ### 🛠 TECH STACK
 
 - **Core Framework:** `React 18` (Vite)
