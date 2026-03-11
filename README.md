@@ -1,3 +1,8 @@
+Ini adalah kode lengkap yang sudah saya rapikan strukturnya, memperbaiki indentasi, dan memastikan elemen visual (seperti lencana di bawah) menggunakan URL yang benar agar muncul dengan sempurna di halaman profil GitHub Anda.
+
+Silakan salin seluruh kode di bawah ini:
+
+```markdown
 # 🌌 STAR WARS ARCHIVES: NEURAL DASHBOARD
 
 ---
@@ -23,58 +28,96 @@ This is a high-performance **Star Wars Single Page Application (SPA)** designed 
 - **API:** `SWAPI` (The Star Wars API)
 - **Tools:** `Lucide React`, `Star Jedi Fonts`, `Eslint`
 
-⚡ KEY ARCHITECTURAL FEATURES
-1. Advanced State Management
+---
 
-Utilizes Redux Toolkit to synchronize UI states. Whether you select a pilot in the Personnel tab or filter a planet by climate, the state remains consistent throughout the application, eliminating "prop drilling" and ensuring a single source of truth.
-2. Tactical Search & Debouncing
+## 📂 PROJECT STRUCTURE
 
-Implements a 500ms Debounce Logic on the Search HUD. This ensures that database queries are only executed when the user has finished typing, drastically reducing API overhead and improving system performance.
-3. Multi-Category Filtering System
+The repository is organized using a **Feature-Based Pattern**, ensuring that logic, components, and styles are modular and easy to maintain.
+
+```text
+src/
+├── components/
+│   ├── common/             # Global reusable components (Loaders, Icons)
+│   └── features/           # Feature-specific logic
+│       ├── people/         # Personnel records (SearchHUD, PeopleList, Detail)
+│       ├── planets/        # Celestial data (PlanetFilter, PlanetList)
+│       └── starships/      # Fleet management (Upcoming)
+├── hooks/                  # Custom hooks for API integration (useSwapi)
+├── store/                  # Redux Toolkit Slices (UI & Selection State)
+├── pages/                  # Page layouts and entry points
+└── App.jsx                 # Routing and Provider setup
+
+```
+
+---
+
+## ⚡ KEY ARCHITECTURAL FEATURES
+
+### 1. Advanced State Management
+
+Utilizes **Redux Toolkit** to synchronize UI states. Whether you select a pilot in the Personnel tab or filter a planet by climate, the state remains consistent throughout the application, eliminating "prop drilling" and ensuring a single source of truth.
+
+### 2. Tactical Search & Debouncing
+
+Implements a **500ms Debounce Logic** on the Search HUD. This ensures that database queries are only executed when the user has finished typing, drastically reducing API overhead and improving system performance.
+
+### 3. Multi-Category Filtering System
 
 Custom filters are implemented for different data types to enhance user exploration:
 
-    Personnel: Filter by Gender (Male, Female, Droid/NA).
+* **Personnel:** Filter by Gender (Male, Female, Droid/NA).
+* **Planets:** Filter by Climate (Arid, Temperate, Tropical, Frozen).
 
-    Planets: Filter by Climate (Arid, Temperate, Tropical, Frozen).
+### 4. Infinite Archive Sync
 
-4. Infinite Archive Sync
+Integrated **Infinite Scrolling** using `useInfiniteQuery`. The dashboard automatically handles batch data fetching and "Load More" logic for seamless exploration of the vast Imperial Archives.
 
-Integrated Infinite Scrolling using useInfiniteQuery. The dashboard automatically handles batch data fetching and "Load More" logic for seamless exploration of the vast Imperial Archives.
-🛠 INSTALLATION & SETUP
+---
+
+## 🛠 INSTALLATION & SETUP
 
 To initialize this dashboard in your local sector, execute the following commands:
 
-    Clone the repository:
-    Bash
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/AndykaBaswara/star-wars-dashboard.git](https://github.com/AndykaBaswara/star-wars-dashboard.git)
 
-    git clone [https://github.com/AndykaBaswara/star-wars-dashboard.git](https://github.com/AndykaBaswara/star-wars-dashboard.git)
+```
 
-    Navigate to the command deck:
-    Bash
 
-    cd star-wars-dashboard
+2. **Navigate to the command deck:**
+```bash
+cd star-wars-dashboard
 
-    Install dependencies:
-    Bash
+```
 
-    npm install
 
-    Initialize the engine:
-    Bash
+3. **Install dependencies:**
+```bash
+npm install
 
-    npm run dev
+```
 
-    Access the dashboard:
-    Open http://localhost:5173 in your browser.
 
-👨‍💻 ARCHITECT
+4. **Initialize the engine:**
+```bash
+npm run dev
 
-Andyka Baswara Putra Professional IT Programmer | Computer Science Graduate "May the source be with you."
+```
+
+
+5. **Access the dashboard:** Open [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) in your browser.
+
+---
+
+## 👨‍💻 ARCHITECT
+
+**Andyka Baswara Putra** *Professional IT Programmer | Computer Science Graduate* *"May the source be with you."*
 
 <p align="center">
 <img src="https://www.google.com/search?q=https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with love">
 <img src="https://www.google.com/search?q=https://forthebadge.com/images/badges/made-with-javascript.svg" alt="Made with JS">
 <img src="https://www.google.com/search?q=https://forthebadge.com/images/badges/visual-studio-code.svg" alt="VS Code">
 </p>
+
 ```
