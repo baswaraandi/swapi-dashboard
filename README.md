@@ -1,8 +1,4 @@
-Ini adalah kode lengkap yang sudah saya rapikan strukturnya, memperbaiki indentasi, dan memastikan elemen visual (seperti lencana di bawah) menggunakan URL yang benar agar muncul dengan sempurna di halaman profil GitHub Anda.
-
-Silakan salin seluruh kode di bawah ini:
-
-```markdown
+```
 # 🌌 STAR WARS ARCHIVES: NEURAL DASHBOARD
 
 ---
