@@ -29,24 +29,6 @@ This is a high-performance **Star Wars Single Page Application (SPA)** designed 
 - **Tools:** `Lucide React`, `Star Jedi Fonts`, `Eslint`
 
 ---
-
-## 📂 PROJECT STRUCTURE
-
-The repository is organized using a **Feature-Based Pattern**, ensuring that logic, components, and styles are modular and easy to maintain.
-
-```text
-src/
-├── components/
-│   ├── common/             # Global reusable components (Loaders, Icons)
-│   └── features/           # Feature-specific logic
-│       ├── people/         # Personnel records (SearchHUD, PeopleList, Detail)
-│       ├── planets/        # Celestial data (PlanetFilter, PlanetList)
-│       └── starships/      # Fleet management (Upcoming)
-├── hooks/                  # Custom hooks for API integration (useSwapi)
-├── store/                  # Redux Toolkit Slices (UI & Selection State)
-├── pages/                  # Page layouts and entry points
-└── App.jsx                 # Routing and Provider setup
-
 ```
 
 ---
